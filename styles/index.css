@@ -157,60 +157,57 @@
     color: #fff;
     position: relative; /* 현재위치기준 */ top:10px; 
 }
-/* 제목공통 */
-#wrap main .info h1,
-#wrap main .tourist h1 {font-size: 1.5rem; font-weight: 500; padding-bottom: 30px;}
-#wrap main .container:nth-child(even) {background-color: #f5f5f5;}
-#wrap main .container:nth-child(odd) {background-color: #fff;}
-/* 양림동과 호랑가시나무언덕 */
+/* 양림동호랑가시나무 소개 */
+#wrap main .container {}
 #wrap main .container .info {}
-#wrap main .container .info {
-    width: calc(1920px - 350*2px); margin: 0 auto;
-    padding: 70px 0;
-}
 #wrap main .container .info h1 {}
-#wrap main .container .info p {padding-bottom: 30px; line-height: 1.7;}
-#wrap main .container .info img {}
+#wrap main .container .info h1+p {}
+#wrap main .container .info p {}
+#wrap main .container .info p:last-child {}
+#wrap main .container .info p:last-child img {width: 100%;}/* 반응형 */
 /* 주변관광지 */
-#wrap main .container .tourist {
-    width: calc(1920px - 350*2px); margin: 0 auto;
-    position: relative;
-    padding:70px 0;
-}
+#wrap main .container
+#wrap main .container .tourist {}
 #wrap main .container .tourist h1 {}
-#wrap main .container .tourist p {padding-bottom: 30px;}
+#wrap main .container .tourist p {}
 #wrap main .container .tourist .contents {
     display:flex; flex-flow: row nowrap;
     justify-content: space-between;
-    padding-bottom: 50px;
+    margin: 0 0 50px;/* ul+a 여백 -형제는 margin */
 }
-#wrap main .container .tourist .contents .list_hall {}
-#wrap main .container .tourist .contents .list_hall .hall {}
-#wrap main .container .tourist .contents .list_hall .hall img:hover {}
-#wrap main .container .tourist .contents .list_hall .hall h2 {}
+#wrap main .container .tourist .contents .list_hall {width: calc((100% - 60px) / 4);}/* 크기입력해줘야함 */
+#wrap main .container .tourist .contents .list_hall .hall:hover {width: 120%;}/* 마우스대면 크기증가 */
+#wrap main .container .tourist .contents .list_hall .hall {
+    margin: 0 0 10px; display: block; overflow: hidden; height: 250px;
+}
+#wrap main .container .tourist .contents .list_hall .hall img {width: 100%; margin: 0 0 10px;}
+#wrap main .container .tourist .contents .list_hall h2 {}
 #wrap main .container .tourist .contents .list_villige {}
 #wrap main .container .tourist .contents .list_villige .villige {}
-#wrap main .container .tourist .contents .list_villige .villige img {}
+#wrap main .container .tourist .contents .list_villige .villige img {width: 100%; margin: 0 0 10px;}
 #wrap main .container .tourist .contents .list_villige .villige h2 {}
 #wrap main .container .tourist .contents .list_owen {}
 #wrap main .container .tourist .contents .list_owen .owen {}
-#wrap main .container .tourist .contents .list_owen .owen img {}
+#wrap main .container .tourist .contents .list_owen .owen img {width: 100%; margin: 0 0 10px;}
 #wrap main .container .tourist .contents .list_owen .owen h2 {}
 #wrap main .container .tourist .contents .list_hill {}
 #wrap main .container .tourist .contents .list_hill .hill {}
-#wrap main .container .tourist .contents .list_hill .hill img {}
-#wrap main .container .tourist .contents .list_hill .hill h2 {}
+#wrap main .container .tourist .contents .list_hill .hill img {width: 100%; margin: 0 0 10px;}
 #wrap main .container .tourist .contents .list_hill .hill h2 {}
 #wrap main .container .tourist .more_tourist {
-    position: relative; left:550px;
     border-bottom: solid 1px #000;
-    background-color: lime;
+    /* text-decoration: underline; 밑줄과 글자사이 여백불가능*/
+    display: block; width: max-content; margin: 0 auto; /* 글자위치조정 */
+    font-size: 0.94rem;
 }
-#wrap main .tourist .more_tourist span {}
+/* 객실예약 */
+#wrap main .container {}
 #wrap main .container .reservation_info {}
 #wrap main .container .reservation_info h1 {}
-#wrap main .container .reservation_info p {}
-#wrap main .container .reservation_info .room_list {}
+#wrap main .container .reservation_info > p {font: size 0.94rem; color: #555; line-height: 1.7;}
+#wrap main .container .reservation_info .room_list {
+    display: flex; flex-flow: row nowrap;
+}
 #wrap main .container .reservation_info .room_list .room1 {}
 #wrap main .container .reservation_info .room_list .room1 .room1_details {}
 #wrap main .container .reservation_info .room_list .room1 .room1_details img {}
@@ -220,11 +217,23 @@
 #wrap main .container .reservation_info .room_list .room2 .room2_details {}
 #wrap main .container .reservation_info .room_list .room2 .room2_details img {}
 #wrap main .container .reservation_info .room_list .room2 .room2_details h2 {}
-#wrap main .container .reservation_info .room_list .room2 .room3_details {}
-#wrap main .container .reservation_info .room_list .room2 .room3_details img {}
-#wrap main .container .reservation_info .room_list .room2 .room3_details h2 {}
-#wrap main .container .reservation_info .room_list .room2 .room4_details {}
-#wrap main .container .reservation_info .room_list .room2 .room4_details img {}
-#wrap main .container .reservation_info .room_list .room2 .room4_details h2 {}
-#wrap main .container .reservation_info .room_list .realtime_btn {}
-#wrap main .container .reservation_info .room_list .realtime_btn span {}
+#wrap main .container .reservation_info .room_list .room3 {}
+#wrap main .container .reservation_info .room_list .room3 .room3_details {}
+#wrap main .container .reservation_info .room_list .room3 .room3_details img {}
+#wrap main .container .reservation_info .room_list .room3 .room3_details h2 {}
+#wrap main .container .reservation_info .room_list .room4 .room4 {}
+#wrap main .container .reservation_info .room_list .room4 .room4_details {}
+#wrap main .container .reservation_info .room_list .room4 .room4_details img {}
+#wrap main .container .reservation_info .room_list .room4 .room4_details h2 {}
+#wrap main .container .reservation_info .realtime_btn {}
+/* 오시는길 */
+#wrap main .container {}
+#wrap main .container .map {}
+#wrap main .container .map .map_title {}
+#wrap main .container .map .map_title h1 {}
+#wrap main .container .map .map_title p {}
+#wrap main .container .map > p {}
+#wrap main .container .map > p img {}
+#wrap main .container .map .map_road {}
+#wrap main .container .map .map_road dt {}
+#wrap main .container .map .map_road dd {}

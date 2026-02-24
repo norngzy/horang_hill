@@ -29,6 +29,23 @@ body {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 > li {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 > li > a {}
+/* main */
+#wrap main .info h1,#wrap main .tourist h1,
+#wrap main .container .reservation_info h1 {font-size: 1.5rem; font-weight: 500; margin: 0 0 30px;}
+#wrap main .container:nth-child(even) {background-color: #f5f5f5;}
+#wrap main .container:nth-child(odd) {background-color: #fff;}
+#wrap main .container {padding: 70px 0;}/* 너비랑높이는주지않음..사이트공용이아니기때문..! */
+#wrap main .container .info,#wrap main .container .tourist,
+#wrap main .container .reservation_info {width: 1220px; margin: 0 auto;}
+#wrap main .container .info h1+p,#wrap main .container .tourist p {
+    font: size 0.94rem; color: #555; line-height: 1.7; margin: 0 0 30px;
+}
+#wrap main .container .tourist .contents .list_hall .hall h2,
+#wrap main .container .tourist .contents .list_villige .villige h2,
+#wrap main .container .tourist .contents .list_owen .owen h2,
+#wrap main .container .tourist .contents .list_hill .hill h2 {font-weight: 600rem; font-size: 1.13rem;}
 /* footer */
 #wrap footer {}
-#wrap footer p {}
+#wrap footer .footer_bg {}
+#wrap footer .footer_bg .address {}
+#wrap footer .footer_bg .address p {}
