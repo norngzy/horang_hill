@@ -204,36 +204,54 @@
 #wrap main .container {}
 #wrap main .container .reservation_info {}
 #wrap main .container .reservation_info h1 {}
-#wrap main .container .reservation_info > p {font: size 0.94rem; color: #555; line-height: 1.7;}
+#wrap main .container .reservation_info > p {}
 #wrap main .container .reservation_info .room_list {
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 50px;
 }
 #wrap main .container .reservation_info .room_list .room1 {}
 #wrap main .container .reservation_info .room_list .room1 .room1_details {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details img {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details h2 {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details p {}
+#wrap main .container .reservation_info .room_list .room1 .room1_details img {margin:0 0 10px;}
+#wrap main .container .reservation_info .room_list .room1 .room1_details h2 {font-size: 1.13rem; font-weight: 500; margin:0 0 10px;}
+#wrap main .container .reservation_info .room_list .room1 .room1_details p {font: size 0.88rem; color: #555; line-height: 1.7;}
+#wrap main .container .reservation_info .room_list .room1 .room1_details:nth-child(1) p {}
+#wrap main .container .reservation_info .room_list .room1 .room1_details:nth-child(2) p {}
 #wrap main .container .reservation_info .room_list .room2 {}
 #wrap main .container .reservation_info .room_list .room2 .room2_details {}
-#wrap main .container .reservation_info .room_list .room2 .room2_details img {}
-#wrap main .container .reservation_info .room_list .room2 .room2_details h2 {}
+#wrap main .container .reservation_info .room_list .room2 .room2_details img {margin:0 0 10px;}
+#wrap main .container .reservation_info .room_list .room2 .room2_details h2 {font-size: 1.13rem; font-weight: 500;}
 #wrap main .container .reservation_info .room_list .room3 {}
 #wrap main .container .reservation_info .room_list .room3 .room3_details {}
-#wrap main .container .reservation_info .room_list .room3 .room3_details img {}
-#wrap main .container .reservation_info .room_list .room3 .room3_details h2 {}
+#wrap main .container .reservation_info .room_list .room3 .room3_details img {margin:0 0 10px;}
+#wrap main .container .reservation_info .room_list .room3 .room3_details h2 {font-size: 1.13rem; font-weight: 500;}
 #wrap main .container .reservation_info .room_list .room4 .room4 {}
 #wrap main .container .reservation_info .room_list .room4 .room4_details {}
-#wrap main .container .reservation_info .room_list .room4 .room4_details img {}
-#wrap main .container .reservation_info .room_list .room4 .room4_details h2 {}
-#wrap main .container .reservation_info .realtime_btn {}
+#wrap main .container .reservation_info .room_list .room4 .room4_details img {margin:0 0 10px;}
+#wrap main .container .reservation_info .room_list .room4 .room4_details h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main .container .reservation_info .realtime_btn {
+    display: block; width: max-content; margin: 0 auto; 
+    font-size: 0.94rem;
+    border-bottom: 1px solid #000;
+}
 /* 오시는길 */
 #wrap main .container {}
 #wrap main .container .map {}
-#wrap main .container .map .map_title {}
+#wrap main .container .map .map_title {
+    display: flex; 
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content:space-between
+}
 #wrap main .container .map .map_title h1 {}
-#wrap main .container .map .map_title p {}
+#wrap main .container .map .map_title h1+p {}
 #wrap main .container .map > p {}
 #wrap main .container .map > p img {}
 #wrap main .container .map .map_road {}
-#wrap main .container .map .map_road dt {}
-#wrap main .container .map .map_road dd {}
+#wrap main .container .map .map_road dt {
+    font-size: 1.5rem; font-weight: 600; color: #555; margin:30px 0;
+}
+#wrap main .container .map .map_road dd {
+    font-size: 0.94rem; color: #555; line-height: 1.8;
+}
