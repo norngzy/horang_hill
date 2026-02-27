@@ -21,7 +21,7 @@
     width: 1144px; height: 136px; 
     padding: 20px;
     display: flex; flex-flow: row nowrap;
-    position: absolute; top: 637px;  left:388px;
+    position: absolute; top: 637px; left:388px;
 }
 /* 객실~인원 공통디자인 */
 #wrap main #hero_bnr #reservation_form .room h2,
@@ -158,100 +158,107 @@
     position: relative; /* 현재위치기준 */ top:10px; 
 }
 /* 양림동호랑가시나무 소개 */
-#wrap main .container {}
-#wrap main .container .info {}
-#wrap main .container .info h1 {}
-#wrap main .container .info h1+p {}
-#wrap main .container .info p {}
-#wrap main .container .info p:last-child {}
-#wrap main .container .info p:last-child img {width: 100%;}/* 반응형 */
+#wrap main .info_container {background-color: #f5f5f5;}
+#wrap main .info_container .info {padding: 70px 0;} /* 너비랑높이는주지않음..사이트공용이아니기때문..! */
+#wrap main .info_container .info h1 {}
+#wrap main .info_container .info h1+p {}
+#wrap main .info_container .info p {}
+#wrap main .info_container .info p:last-child {}
+#wrap main .info_container .info p:last-child img {width: 100%;}/* 반응형 */
 /* 주변관광지 */
-#wrap main .container
-#wrap main .container .tourist {}
-#wrap main .container .tourist h1 {}
-#wrap main .container .tourist p {}
-#wrap main .container .tourist .contents {
+#wrap main .tourist_container {background-color: #fff;}
+#wrap main .tourist_container .tourist {padding: 70px 0;}
+#wrap main .tourist_container .tourist h1 {}
+#wrap main .tourist_container .tourist p {}
+#wrap main .tourist_container .tourist .contents {
     display:flex; flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0 0 50px;/* ul+a 여백 -형제는 margin */
 }
-#wrap main .container .tourist .contents .list_hall {width: calc((100% - 60px) / 4);}/* 크기입력해줘야함 */
-#wrap main .container .tourist .contents .list_hall .hall:hover {width: 120%;}/* 마우스대면 크기증가 */
-#wrap main .container .tourist .contents .list_hall .hall {
+#wrap main .tourist_container .tourist .contents .list_hall {width: calc((100% - 60px) / 4);}/* 크기입력해줘야함 */
+#wrap main .tourist_container .tourist .contents .list_hall .hall {
     margin: 0 0 10px; display: block; overflow: hidden; height: 250px;
 }
-#wrap main .container .tourist .contents .list_hall .hall img {width: 100%; margin: 0 0 10px;}
-#wrap main .container .tourist .contents .list_hall h2 {}
-#wrap main .container .tourist .contents .list_villige {}
-#wrap main .container .tourist .contents .list_villige .villige {}
-#wrap main .container .tourist .contents .list_villige .villige img {width: 100%; margin: 0 0 10px;}
-#wrap main .container .tourist .contents .list_villige .villige h2 {}
-#wrap main .container .tourist .contents .list_owen {}
-#wrap main .container .tourist .contents .list_owen .owen {}
-#wrap main .container .tourist .contents .list_owen .owen img {width: 100%; margin: 0 0 10px;}
-#wrap main .container .tourist .contents .list_owen .owen h2 {}
-#wrap main .container .tourist .contents .list_hill {}
-#wrap main .container .tourist .contents .list_hill .hill {}
-#wrap main .container .tourist .contents .list_hill .hill img {width: 100%; margin: 0 0 10px;}
-#wrap main .container .tourist .contents .list_hill .hill h2 {}
-#wrap main .container .tourist .more_tourist {
+#wrap main .tourist_container .tourist .contents .list_hall .hall {}
+#wrap main .tourist_container .tourist .contents .list_hall .hall img {width: 100%; margin: 0 0 10px;}
+#wrap main .tourist_container .tourist .contents .list_hall .hall img:hover {width: 120%;}/* 마우스대면 크기증가 */
+#wrap main .tourist_container .tourist .contents .list_hall h2 {}
+#wrap main .tourist_container .tourist .contents .list_villige {}
+#wrap main .tourist_container .tourist .contents .list_villige .villige {}
+#wrap main .tourist_container .tourist .contents .list_villige .villige {}
+#wrap main .tourist_container .tourist .contents .list_villige .villige img {width: 100%; margin: 0 0 10px;}
+#wrap main .tourist_container .tourist .contents .list_villige .villige h2 {}
+#wrap main .tourist_container .tourist .contents .list_owen {}
+#wrap main .tourist_container .tourist .contents .list_owen .owen {}
+#wrap main .tourist_container .tourist .contents .list_owen .owen {}
+#wrap main .tourist_container .tourist .contents .list_owen .owen img {width: 100%; margin: 0 0 10px;}
+#wrap main .tourist_container .tourist .contents .list_owen .owen h2 {}
+#wrap main .tourist_container .tourist .contents .list_hill {}
+#wrap main .tourist_container .tourist .contents .list_hill .hill {}
+#wrap main .tourist_container .tourist .contents .list_hill .hill {}
+#wrap main .tourist_container .tourist .contents .list_hill .hill img {width: 100%; margin: 0 0 10px;}
+#wrap main .tourist_container .tourist .contents .list_hill .hill h2 {}
+#wrap main .tourist_container .tourist .more_tourist {
     border-bottom: solid 1px #000;
     /* text-decoration: underline; 밑줄과 글자사이 여백불가능*/
     display: block; width: max-content; margin: 0 auto; /* 글자위치조정 */
     font-size: 0.94rem;
 }
 /* 객실예약 */
-#wrap main .container {}
-#wrap main .container .reservation_info {}
-#wrap main .container .reservation_info h1 {}
-#wrap main .container .reservation_info > p {}
-#wrap main .container .reservation_info .room_list {
+#wrap main .reservation_container {background-color: #f5f5f5;}
+#wrap main .reservation_container .reservation_info {padding: 70px 0;}
+#wrap main .reservation_container .reservation_info h1 {}
+#wrap main .reservation_container .reservation_info > p {}
+#wrap main .reservation_container .reservation_info .room_list {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 50px;
 }
-#wrap main .container .reservation_info .room_list .room1 {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details img {margin:0 0 10px;}
-#wrap main .container .reservation_info .room_list .room1 .room1_details h2 {font-size: 1.13rem; font-weight: 500; margin:0 0 10px;}
-#wrap main .container .reservation_info .room_list .room1 .room1_details p {font: size 0.88rem; color: #555; line-height: 1.7;}
-#wrap main .container .reservation_info .room_list .room1 .room1_details:nth-child(1) p {}
-#wrap main .container .reservation_info .room_list .room1 .room1_details:nth-child(2) p {}
-#wrap main .container .reservation_info .room_list .room2 {}
-#wrap main .container .reservation_info .room_list .room2 .room2_details {}
-#wrap main .container .reservation_info .room_list .room2 .room2_details img {margin:0 0 10px;}
-#wrap main .container .reservation_info .room_list .room2 .room2_details h2 {font-size: 1.13rem; font-weight: 500;}
-#wrap main .container .reservation_info .room_list .room3 {}
-#wrap main .container .reservation_info .room_list .room3 .room3_details {}
-#wrap main .container .reservation_info .room_list .room3 .room3_details img {margin:0 0 10px;}
-#wrap main .container .reservation_info .room_list .room3 .room3_details h2 {font-size: 1.13rem; font-weight: 500;}
-#wrap main .container .reservation_info .room_list .room4 .room4 {}
-#wrap main .container .reservation_info .room_list .room4 .room4_details {}
-#wrap main .container .reservation_info .room_list .room4 .room4_details img {margin:0 0 10px;}
-#wrap main .container .reservation_info .room_list .room4 .room4_details h2 {font-size: 1.13rem; font-weight: 500;}
-#wrap main .container .reservation_info .realtime_btn {
+#wrap main .reservation_container .reservation_info .room_list .room1 {width: 500px; height: 436px;}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details {
+display: block; overflow: hidden;
+}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details img {width: 100%; margin:0 0 10px;}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details img:hover {width: 120%;}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details p {font-size: 0.88rem; color: #555; line-height: 1.7;}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details:nth-child(1) p {}
+#wrap main .reservation_container .reservation_info .room_list .room1 .room1_details:nth-child(2) p {}
+#wrap main .reservation_container .reservation_info .room_list .room2 {}
+#wrap main .reservation_container .reservation_info .room_list .room2 .room2_details {}
+#wrap main .reservation_container .reservation_info .room_list .room2 .room2_details img {margin:0 0 10px;}
+#wrap main .reservation_container .reservation_info .room_list .room2 .room2_details h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main .reservation_container .reservation_info .room_list .room3 {}
+#wrap main .reservation_container .reservation_info .room_list .room3 .room3_details {}
+#wrap main .reservation_container .reservation_info .room_list .room3 .room3_details img {margin:0 0 10px;}
+#wrap main .reservation_container .reservation_info .room_list .room3 .room3_details h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main .reservation_container .reservation_info .room_list .room4 .room4 {}
+#wrap main .reservation_container .reservation_info .room_list .room4 .room4_details {}
+#wrap main .reservation_container .reservation_info .room_list .room4 .room4_details img {margin:0 0 10px;}
+#wrap main .reservation_container .reservation_info .room_list .room4 .room4_details h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main .reservation_container .reservation_info .realtime_btn {
     display: block; width: max-content; margin: 0 auto; 
     font-size: 0.94rem;
     border-bottom: 1px solid #000;
 }
 /* 오시는길 */
-#wrap main .container {}
-#wrap main .container .map {}
-#wrap main .container .map .map_title {
+#wrap main .map_container {background-color: #fff;}
+#wrap main .map_container .map {padding: 70px 0;}
+#wrap main .map_container .map .map_title {
     display: flex; 
     flex-flow:row nowrap;
     align-items: center;
     justify-content:space-between
 }
-#wrap main .container .map .map_title h1 {}
-#wrap main .container .map .map_title h1+p {}
-#wrap main .container .map > p {}
-#wrap main .container .map > p img {}
-#wrap main .container .map .map_road {}
-#wrap main .container .map .map_road dt {
+#wrap main .map_container .map .map_title h1 {}
+#wrap main .map_container .map .map_title h1+p {}
+#wrap main .map_container .map > p {}
+#wrap main .map_container .map > p img {}
+#wrap main .map_container .map .map_road {}
+#wrap main .map_container .map .map_road dt {
     font-size: 1.5rem; font-weight: 600; color: #555; margin:30px 0;
 }
-#wrap main .container .map .map_road dd {
+#wrap main .map_container .map .map_road dd {
     font-size: 0.94rem; color: #555; line-height: 1.8;
 }

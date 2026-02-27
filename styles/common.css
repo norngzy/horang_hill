@@ -23,38 +23,41 @@ body {}
 }
 #wrap header nav #gnb > li {}
 #wrap header nav #gnb > li > a {color:#fff}
-#wrap header nav #gnb > li > .gnb_depth2 {display: none;}
+#wrap header nav #gnb > li:hover > .gnb_depth2 {display: block;}
+#wrap header nav #gnb > li > .gnb_depth2 {
+    position: absolute; background: #fff; 
+    width: 200px; left: 50%; transform: translateX(350%);
+    z-index: 999; text-align: center;
+    padding: 10px 0; display: none; margin: 10px;
+}
 #wrap header nav #gnb > li > .gnb_depth2 > li {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > a {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 > li {}
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 > li > a {}
 /* main */
-#wrap main .info h1,#wrap main .tourist h1,
-#wrap main .container .reservation_info h1,
-#wrap main .container .map .map_title h1 {font-size: 1.5rem; font-weight: 500; margin: 0 0 30px;}
-#wrap main .container:nth-child(even) {background-color: #f5f5f5;}
-#wrap main .container:nth-child(odd) {background-color: #fff;}
-#wrap main .container {padding: 70px 0;}/* 너비랑높이는주지않음..사이트공용이아니기때문..! */
-#wrap main .container .info,#wrap main .container .tourist,
-#wrap main .container .reservation_info, #wrap main .container .map,
-#wrap footer .footer_bg .address {width: 1220px; margin: 0 auto;}
-#wrap main .container .info h1+p,#wrap main .container .tourist p,
-#wrap main .container .reservation_info > p  {
-    font: size 0.94rem; color: #555; line-height: 1.7; margin: 0 0 30px;
+#wrap main .info_container .info h1,#wrap main .tourist_container .tourist h1,
+#wrap main .reservation_container .reservation_info h1,
+#wrap main .map_container .map .map_title h1 {font-size: 1.5rem; font-weight: 500; margin: 0 0 30px;}
+#wrap main .info_container .info,#wrap main .tourist_container .tourist,
+#wrap main .reservation_container .reservation_info, #wrap main .map_container .map,
+#wrap footer .footer_bg address {width: 1220px; margin: 0 auto;} 
+#wrap main .container .info h1+p,#wrap main .tourist_container .tourist p,
+#wrap main .reservation_container .reservation_info > p {
+    font-size:0.94rem; color: #555; line-height: 1.7; margin: 0 0 30px;
 }
-#wrap main .container .tourist .contents .list_hall .hall h2,
-#wrap main .container .tourist .contents .list_villige .villige h2,
-#wrap main .container .tourist .contents .list_owen .owen h2,
-#wrap main .container .tourist .contents .list_hill .hill h2 {font-weight: 600rem; font-size: 1.13rem;}
+#wrap main .tourist_container .tourist .contents .list_hall h2,
+#wrap main .tourist_container .tourist .contents .list_villige .villige h2,
+#wrap main .tourist_container .tourist .contents .list_owen .owen h2,
+#wrap main .tourist_container .tourist .contents .list_hill .hill h2 {font-weight: 600rem; font-size: 1.13rem;}
 /* footer */
 #wrap footer {}
 #wrap footer .footer_bg {
     background-color: #000;
     margin: auto 0; padding: 70px 0;
 }
-#wrap footer .footer_bg .address {}
-#wrap footer .footer_bg .address p {
+#wrap footer .footer_bg address {}
+#wrap footer .footer_bg address p {
     color: #fff; font-size: 1.13rem; line-height: 2.0; 
 } 
-#wrap footer .footer_bg .address p a {color: #fff; font-size: 1.13rem; line-height: 2.0;}
+#wrap footer .footer_bg address p a {color: #fff; font-size: 1.13rem; line-height: 2.0;}
